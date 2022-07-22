@@ -1,32 +1,81 @@
 /* variables */
+@font-face {
+    font-family:"Heavitas";
+    src:url('/fonts/Heavitas/Heavitas.ttf')
+}
+
+@font-face {
+    font-family:"Basic";
+    src: url('/fonts/Basic/Basic\ Light.ttf')
+}
+
+@font-face {
+    font-family:"Mazin";
+    src: url('/fonts/Mazin/MazinDEMO-Regular.otf');
+}
+
+
+
 
 :root {
-    --mainbackground-color:red ;
-    --secondarybackground-color:blue ;
-    --text-color:  ;
-    --main-fontfamily: ;
-    --secondary-font-family: ;
+    --mainbackground-color:#ffffff;
+    --secondarybackground-color:#2F3E46  ;
+    --maintext-color:#60a8d3 ;
+    --secondarytext-color:#ffffff; 
+    --main-fontfamily:"Heavitas", serif ;
+    --secondary-fontfamily:"Basic", sans-serif ;
+    --tertiary-fontfamily: "";
     
 }
 
-body {
-    /* padding-top:10rem; */
-    min-height:80vh;
-}
+/* body {
+    /* padding-top:10rem; 
+} */
 
 #navigationBar {
-    background-color:var(--secondarybackground-color);
-    font-family:var(--secondary-font-family);
+    background-color:var(--mainbackground-color);
+    font-family:var(--main-fontfamily);
     position:fixed;
+    padding-top:0;
+    padding-bottom:0;
 
+    width:100%;
+
+}
+
+
+#navigationBar .nav-link {
+    color:var(--maintext-color);
+    font-size:1.3rem;
 }
 
 #sectionHeroBanner {
-    font-family:var(--main-fontfamily);
+  min-height:80vh;
+  background-image:none;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color: var(--secondarybackground-color);
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family:var(--main-fontfamily);
+  color:#0a6f4f;
+
+
 }
 
 #sectionAboutTheProject {
     font-family:var(--main-fontfamily);
+    background-color:var(--secondarybackground-color);
+    color:var(--secondarytext-color)
+}
+
+#sectionAboutTheProject p {
+    font-family:var(--secondary-fontfamily);
+    color:var(--secondary-text-color);
+
 }   
 
 #sectionRegistration {
