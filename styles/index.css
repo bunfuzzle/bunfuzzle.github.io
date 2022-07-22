@@ -1,0 +1,40 @@
+/* variables */
+
+:root {
+    --mainbackground-color:red ;
+    --secondarybackground-color:blue ;
+    --text-color:  ;
+    --main-fontfamily: ;
+    --secondary-font-family: ;
+    
+}
+
+body {
+    /* padding-top:10rem; */
+    min-height:80vh;
+}
+
+#navigationBar {
+    background-color:var(--secondarybackground-color);
+    font-family:var(--secondary-font-family);
+    position:fixed;
+
+}
+
+#sectionHeroBanner {
+    font-family:var(--main-fontfamily);
+}
+
+#sectionAboutTheProject {
+    font-family:var(--main-fontfamily);
+}   
+
+#sectionRegistration {
+    font-family:var(--main-fontfamily);
+}
+
+#navigationFooter {
+    background-color:var(--secondarybackground-color);
+    font-family:var(--secondary-font-family);
+
+}
