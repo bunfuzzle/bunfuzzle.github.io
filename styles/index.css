@@ -4,14 +4,10 @@
     src:url('/fonts/Heavitas/Heavitas.ttf')
 }
 
-@font-face {
-    font-family:"Basic";
-    src: url('/fonts/Basic/Basic\ Light.ttf')
-}
 
 @font-face {
-    font-family:"Mazin";
-    src: url('/fonts/Mazin/MazinDEMO-Regular.otf');
+    font-family: "Sunday";
+    src: url('/fonts/Sunday/SUNDAY.ttf');
 }
 
 
@@ -23,7 +19,7 @@
     --maintext-color:#60a8d3 ;
     --secondarytext-color:#ffffff; 
     --main-fontfamily:"Heavitas", serif ;
-    --secondary-fontfamily:"Basic", sans-serif ;
+    --secondary-fontfamily:"Sunday", sans-serif ;
     --tertiary-fontfamily: "";
     
 }
