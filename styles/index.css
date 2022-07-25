@@ -4,7 +4,6 @@
     src:url('/fonts/Heavitas/Heavitas.ttf')
 }
 
-
 @font-face {
     font-family: "Sunday";
     src: url('/fonts/Sunday/SUNDAY.ttf');
@@ -15,7 +14,7 @@
 
 :root {
     --mainbackground-color:#ffffff;
-    --secondarybackground-color:#2F3E46  ;
+    --secondarybackground-color: #2F3E46 ;
     --maintext-color:#60a8d3 ;
     --secondarytext-color:#ffffff; 
     --main-fontfamily:"Heavitas", serif ;
@@ -24,14 +23,14 @@
     
 }
 
-/* body {
-    /* padding-top:10rem; 
-} */
+.whitebg {
+    background-color:white;
+}
+
 
 #navigationBar {
     background-color:var(--mainbackground-color);
     font-family:var(--main-fontfamily);
-    position:fixed;
     padding-top:0;
     padding-bottom:0;
 
@@ -46,20 +45,29 @@
 }
 
 #sectionHeroBanner {
-  min-height:80vh;
-  background-image:none;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color: var(--secondarybackground-color);
+  min-height:70vh;
 
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/banner.png);
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
 
   font-family:var(--main-fontfamily);
   color:#0a6f4f;
 
 
+}
+
+@media (max-width:992px) {
+    #sectionHeroBanner {
+        min-height:50vh;
+    }
+}
+
+@media (max-width:768px) {
+    #sectionHeroBanner {
+        min-height:30vh;
+    }
 }
 
 #sectionAboutTheProject {
@@ -71,15 +79,65 @@
 #sectionAboutTheProject p {
     font-family:var(--secondary-fontfamily);
     color:var(--secondary-text-color);
+    text-align:justify;
+    margin:2rem 0 2rem 0
 
 }   
+
+#sectionAboutTheProject > .row {
+    margin-bottom:5rem;
+}
+
+#aboutPicture {
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#sectionObjectives h2 {
+    margin-bottom:2rem;
+}
+
+#sectionObjectives h5 {
+    font-family:var(--secondary-fontfamily);
+}
+
+#sectionObjectives p {
+    max-width:50%;
+
+}
+
+#sectionPrizes {
+    display:flex;
+    justify-content:center;
+}
+
+#sectionPrizes h5 {
+    font-family:var(--secondary-fontfamily);
+}
+
+#sectionTimeline h5 {
+    font-family:var(--secondary-fontfamily)
+}
 
 #sectionRegistration {
     font-family:var(--main-fontfamily);
 }
 
-#navigationFooter {
-    background-color:var(--secondarybackground-color);
-    font-family:var(--secondary-font-family);
 
+#navigationFooter {
+    background-color:var(--mainbackground-color);
+    font-family:var(--secondary-fontfamily);  
+
+    width:100%;
+
+
+}
+
+.form-areas {
+    font-family:var(--secondary-fontfamily);
 }
